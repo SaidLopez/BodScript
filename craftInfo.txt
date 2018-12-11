@@ -464,9 +464,27 @@ if %1 = fancy_wind_chimes || %1 = fancy , #spc , wind , #spc , chimes
 	gosub _sub fancy_wind_chimes rip 3 trash miscellaneous 5 12 1 tinkering 800 1 ingots 15
 
 ;BowCraft Items
+if %1 = Assassin's_Shortbow || %1 = Assassin's , #spc , Shortbow
+	gosub _sub Assassin's_Shortbow /type 3 trash Weapons 5 12 1 bowcraft 750 1 boards 15 Dark_Sapphire 1 
+if %1 = Barbed_Longbow || %1 = Barbed , #spc , Longbow
+	gosub _sub Barbed_Longbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 20 Fire_Ruby 1 
+if %1 = Bow || %1 = /type
+	gosub _sub Bow /type 3 trash weapons 5 12 1 bowcraft 300 1 boards 7
+if %1 = Composite_Bow || %1 = Composite , #spc , bow
+	gosub _sub Composite_Bow /type 3 trash weapons 5 12 1 bowcraft 700 1 boards 7
+if %1 = Yumi || %1 = /type
+	gosub _sub Yumi /type 3 trash weapons 5 12 1 bowcraft 900 1 boards 10
 if %1 = Crossbow || %1 = /type
-	gosub _sub Crossbow rip 3 trash miscellaneous 5 12 1 tinkering 800 1 ingots 15
-
+	gosub _sub Crossbow /type 3 trash weapons 5 12 1 bowcraft 600 1 boards 7
+if %1 = Heavy_Crossbow || %1 = Heavy , #spc , crossbow
+	gosub _sub Heavy_Crossbow /type 3 trash weapons 5 12 1 bowcraft 800 1 boards 10
+if %1 = Repeating_Crossbow || %1 = Repeating , #spc , crossbow
+	gosub _sub Repeating_Crossbow /type 3 trash weapons 5 12 1 bowcraft 900 1 boards 10
+if %1 = Magical_Shortbow || %1 = Magical , #spc , Shortbow
+	gosub _sub Magical_shortbow /type 3 trash weapons 5 12 1 bowcraft 850 1 boards 15 
+if %1 = Ranger's_Shortbow || %1 = Magical , #spc , Shortbow
+	gosub _sub Magical_shortbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 15 Perfect_Emerald 1 
+	
 if !cgiItemName = n/a
 	{
 	display ok script halting$craftInfo: item %1 not found
