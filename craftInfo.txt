@@ -484,7 +484,19 @@ if %1 = Magical_Shortbow || %1 = Magical , #spc , Shortbow
 	gosub _sub Magical_shortbow /type 3 trash weapons 5 12 1 bowcraft 850 1 boards 15 
 if %1 = Ranger's_Shortbow || %1 = Magical , #spc , Shortbow
 	gosub _sub Magical_shortbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 15 Perfect_Emerald 1 
-	
+if %1 = Lightweight_Shortbow || %1 = Lightweight , #spc , Shortbow
+	gosub _sub Lightweight_shortbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 15 White_Pearl 1 
+if %1 = Mystical_Shortbow || %1 = Mystical , #spc , Shortbow
+	gosub _sub Mystical_shortbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 15 White_Pearl 1 
+if %1 = Elven_Composite_bow || %1 = Elven , #spc , Composite, #spc , bow
+	gosub _sub Elven_Composite_bow /type 3 trash weapons 5 12 1 bowcraft 950 1 boards 20
+if %1 = Slayer_Longbow || %1 = Slayer , #spc , Longbow
+	gosub _sub Slayer_Longbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 20 Amber 1 
+if %1 = Frozen_Longbow || %1 = Frozen , #spc , Longbow
+	gosub _sub Frozen_Longbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 20 Turquoise 1 
+if %1 = Longbow_of_Might || %1 = Longbow , #spc , of , #spc , Might
+	gosub _sub Frozen_Longbow /type 3 trash weapons 5 12 1 bowcraft 750 1 boards 20 Blue_Diamond 1 	
+
 if !cgiItemName = n/a
 	{
 	display ok script halting$craftInfo: item %1 not found
